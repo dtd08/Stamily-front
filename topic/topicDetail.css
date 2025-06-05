@@ -1,4 +1,8 @@
 /* main */
+#main {
+    margin-bottom: 80px;
+}
+
 #main .bc {
     position: absolute;
     background-color: #000a;
