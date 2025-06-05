@@ -114,9 +114,7 @@
     height: 30%;
 }
 
-#contents .subscr .btn-box a {
-    display: block;
-
+#contents .subscr .btn-box .btn {
     margin-bottom: 10px;
     padding: 10px;
 
@@ -131,6 +129,7 @@
 
 #contents .subscr .btn-box #collect:hover {
     background-color: #f1f1f1;
+    cursor: pointer;
 }
 
 #contents .subscr .btn-box #subscr {
@@ -139,6 +138,7 @@
 
 #contents .subscr .btn-box #subscr:hover {
     background-color: #c5f061;
+    cursor: pointer;
 }
 
 #contents .subscr .subsbox {
