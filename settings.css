@@ -1,6 +1,7 @@
 /* variables */
 :root {
-    --main-border-set: #ddd solid 1px;
+    --main-border-color: #ddd;
+    --main-border-set: var(--main-border-color) solid 1px;
     --header-height: 60px;
 
     --topic-width: 570px;
