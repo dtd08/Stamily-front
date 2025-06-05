@@ -217,6 +217,9 @@ hr {
 /* footer */
 #footer {
     position : relative;
+    bottom: 0;
+    transform: translateY(100%);
+
     height: var(--footer-height);
 
     border: var(--main-border-set);

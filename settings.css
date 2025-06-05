@@ -52,3 +52,17 @@ hr {
     width: 80%;
     margin: auto;
 }
+
+#wrap {
+    width: 100%;
+    min-height: 100vh; /* 최소 높이 설정 */
+    display: flex;  /* flex:1(자리 차지) 을 사용하기 위한 코드 */
+    flex-direction: column; /* 세로 정렬 */
+}
+
+#main {
+    position: relative;
+    height: calc(100vh - var(--header-height));
+    margin-top: calc(var(--header-height) + 40px);
+    flex: 1; /* 공간 차지(footer가 main의 공간을 침범하지 않음) */
+}
