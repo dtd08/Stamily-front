@@ -23,7 +23,7 @@
     padding: 20px 0 25px;
 }
 
-/* topic explan */
+/* topic descr */
 #headline .headline {
     width: 90%;
 }
@@ -33,7 +33,7 @@
     color: #ddd;
 }
 
-#headline .explan {
+#headline .descr {
     font-size: 17px;
     color: #bbb;
     margin: 5px 0 30px;
