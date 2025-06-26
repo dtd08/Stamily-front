@@ -58,8 +58,17 @@
 }
 
 #calendar #days th {
-    padding: 10px 0 20px 0;
+    padding: 10px 0 40px 0;
 }
+
+#calendar .only-line {
+    position: relative;
+    top: -30px;
+}
+
+/* #calendar .only-line td {
+    border-bottom: #ddd 3px solid;
+} */
 
 #calendar .week, #days {
     display: grid;
@@ -69,11 +78,19 @@
 #calendar .week .day {
     position: relative;
     padding: 15px 10px;
-    min-height: 80px;
+    min-height: 120px;
 
     /* background-color: #eee; */
     border-right: var(--main-border-set);
     border-bottom: var(--main-border-set);
+}
+
+#calendar .week .sun .num {
+    color: red;
+}
+
+#calendar .week .sat .num {
+    color: blue;
 }
 
 #calendar .week .sat {
