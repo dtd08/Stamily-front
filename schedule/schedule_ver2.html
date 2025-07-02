@@ -56,22 +56,29 @@
                         <tr class="week w1">
                             <td class="day sun">
                                 <div class="num">1</div>
-                                <span class="to_id">test schedule line; test schedule line</span>
                             </td>
                             <td class="day mon">
                                 <div class="num">2</div>
+                                <!-- 방과후 일정 표시(클래스는 방과후 아이디로) -->
+                                <span class="to_id">test schedule line</span>
+                                <span class="to_id2">sec test schedule line</span>
                             </td>
                             <td class="day tue">
                                 <div class="num">3</div>
+                                <span class="to_id"></span>
+                                <span class="to_id2"></span>
                             </td>
                             <td class="day wed">
                                 <div class="num">4</div>
+                                <span class="to_id"></span>
+                                <span class="to_id2"></span>
                             </td>
                             <td class="day thu">
                                 <div class="num">5</div>
                             </td>
                             <td class="day fri">
                                 <div class="num">6</div>
+                                <span class="to_id"></span>
                             </td>
                             <td class="day sat">
                                 <div class="num">7</div>
@@ -179,3 +186,14 @@
     </div>
 </body>
 </html>
+
+<!-- 
+    방과후 신청 정보 불러와서
+    -> 사용자 아이디와 일치하는 내용 찾고
+    -> 해당 방과후의 일정에 따라서 탬플릿에 요소(일정) 추가
+    
+    방과후 일정을 클릭하면 상세한 내용과 시간이 적힌 팝업 나오게 추가
+    -> 선생님의 방과후 관리 페이지과 연동되게 설정 (같은 데이터 공유)
+    => 학생의 방과후 일정 확인은 보여주는 페이지, 선생의 방과후 관리 페이지는 수정 페이지
+    => 방과후 개설 때에는 상세한 일정 관리 x, 일정 관리 탭에서만 관리
+-->

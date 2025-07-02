@@ -78,7 +78,9 @@
 #calendar .week .day {
     position: relative;
     padding: 15px 10px;
+
     min-height: 120px;
+    min-width: calc(100% / 7);
 
     /* background-color: #eee; */
     border-right: var(--main-border-set);
@@ -100,3 +102,29 @@
 #calendar .w5 .day {
     border-bottom: none;
 }
+
+#calendar .week .day span {
+    display: block;
+    min-height: 23px;
+    
+    margin-top: 5px;
+    padding: 2px 5px;
+
+    background-color: #ddd;
+    /* border-radius: 7px; */
+
+    /* 메세지 숨기기 */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* 테스트 일정 */
+#calendar .week .day .to_id {
+    background-color: #cff7cf;
+}
+
+#calendar .week .day .to_id2 {
+    background-color: #f4f7cf;
+}
+
