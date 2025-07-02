@@ -20,89 +20,161 @@
         <!-- main -->
         <main id="main" class="container">
             <!-- title -->
-            <h1 id="schedule-title">신청한 강의 모음</h1>
+            <h1 id="schedule-title">강의 일정 확인</h1>
 
-            <!-- select:period -->
-            <section id="period-box">                
-                <select name="period" id="period">
-                    <!-- 전체 포함 6개만 -->
-                    <option value="all">전체</option>
-                    <option value="2025-01">2025년 1월</option>
-                    <option value="2025-02">2025년 2월</option>
-                    <option value="2025-03">2025년 3월</option>
-                    <option value="2025-04">2025년 4월</option>
-                    <option value="2025-05">2025년 5월</option>
-                </select>
-            </section>
+            <!-- calendar box -->
+            <section id="calendar-box">
 
-            <!-- table:schedule -->
-            <section id="list-box">
-                <table id="schedule-list">
-                    <thead>
-                        <tr>
-                            <th>th</th>
-                            <th>th</th>
-                            <th>th</th>
-                            <th>th</th>
-                            <th>th</th>
-                        </tr>
-                    </thead>
+                <!-- period -->
+                <div id="period">                
+                    <span id="after">◀</span>
+                    <p>6월</p>
+                    <span id="before">▶</span>
+                </div>
+
+                <!-- calendar -->
+                <table id="calendar">
                     <tbody>
-                        <tr>
-                            <td>td</td>
-                            <td>td</td>
-                            <td>td</td>
-                            <td>td</td>
-                            <td>td</td>
+                        <tr id="days">
+                            <th class="sun">일</th>
+                            <th>월</th>
+                            <th>화</th>
+                            <th>수</th>
+                            <th>목</th>
+                            <th>금</th>
+                            <th class="sat">토</th>
                         </tr>
-                        <tr>
-                            <td>td</td>
-                            <td>td</td>
-                            <td>td</td>
-                            <td>td</td>
-                            <td>td</td>
+                        <tr class="only-line">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
-                        <tr>
-                            <td>td</td>
-                            <td>td</td>
-                            <td>td</td>
-                            <td>td</td>
-                            <td>td</td>
+                        <tr class="week w1">
+                            <td class="day sun">
+                                <div class="num">1</div>
+                            </td>
+                            <td class="day mon">
+                                <div class="num">2</div>
+                                <!-- 방과후 일정 표시(클래스는 방과후 아이디로) -->
+                                <span class="to_id">test schedule line</span>
+                                <span class="to_id2">sec test schedule line</span>
+                            </td>
+                            <td class="day tue">
+                                <div class="num">3</div>
+                                <span class="to_id"></span>
+                                <span class="to_id2"></span>
+                            </td>
+                            <td class="day wed">
+                                <div class="num">4</div>
+                                <span class="to_id"></span>
+                                <span class="to_id2"></span>
+                            </td>
+                            <td class="day thu">
+                                <div class="num">5</div>
+                            </td>
+                            <td class="day fri">
+                                <div class="num">6</div>
+                                <span class="to_id"></span>
+                            </td>
+                            <td class="day sat">
+                                <div class="num">7</div>
+                            </td>
                         </tr>
-                        <tr>
-                            <td>td</td>
-                            <td>td</td>
-                            <td>td</td>
-                            <td>td</td>
-                            <td>td</td>
+                        <tr class="week w2">
+                            <td class="day sun">
+                                <div class="num">8</div>
+                            </td>
+                            <td class="day mon">
+                                <div class="num">9</div>
+                            </td>
+                            <td class="day tue">
+                                <div class="num">10</div>
+                            </td>
+                            <td class="day wed">
+                                <div class="num">11</div>
+                            </td>
+                            <td class="day thu">
+                                <div class="num">12</div>
+                            </td>
+                            <td class="day fri">
+                                <div class="num">13</div>
+                            </td>
+                            <td class="day sat">
+                                <div class="num">14</div>
+                            </td>
                         </tr>
-                        <tr>
-                            <td>td</td>
-                            <td>td</td>
-                            <td>td</td>
-                            <td>td</td>
-                            <td>td</td>
+                        <tr class="week w3">
+                            <td class="day sun">
+                                <div class="num">15</div>
+                            </td>
+                            <td class="day mon">
+                                <div class="num">16</div>
+                            </td>
+                            <td class="day tue">
+                                <div class="num">17</div>
+                            </td>
+                            <td class="day wed">
+                                <div class="num">18</div>
+                            </td>
+                            <td class="day thu">
+                                <div class="num">19</div>
+                            </td>
+                            <td class="day fri">
+                                <div class="num">20</div>
+                            </td>
+                            <td class="day sat">
+                                <div class="num">21</div>
+                            </td>
                         </tr>
-                        <tr>
-                            <td>td</td>
-                            <td>td</td>
-                            <td>td</td>
-                            <td>td</td>
-                            <td>td</td>
+                        <tr class="week w4">
+                            <td class="day sun">
+                                <div class="num">22</div>
+                            </td>
+                            <td class="day mon">
+                                <div class="num">23</div>
+                            </td>
+                            <td class="day tue">
+                                <div class="num">24</div>
+                            </td>
+                            <td class="day wed">
+                                <div class="num">25</div>
+                            </td>
+                            <td class="day thu">
+                                <div class="num">26</div>
+                            </td>
+                            <td class="day fri">
+                                <div class="num">27</div>
+                            </td>
+                            <td class="day sat">
+                                <div class="num">28</div>
+                            </td>
                         </tr>
-                        <tr>
-                            <td>td</td>
-                            <td>td</td>
-                            <td>td</td>
-                            <td>td</td>
-                            <td>td</td>
-                        </tr>
-                        <tr>
-                            <td>td</td>
-                            <td>td</td>
-                            <td>td</td>
-                            <td>td</td>
-                            <td>td</td>
+                        <tr class="week w5">
+                            <td class="day sun">
+                                <div class="num">29</div>
+                            </td>
+                            <td class="day mon">
+                                <div class="num">30</div>
+                            </td>
+                            <td class="day tue">
+                                <div class="num"></div>
+                            </td>
+                            <td class="day wed">
+                                <div class="num"></div>
+                            </td>
+                            <td class="day thu">
+                                <div class="num"></div>
+                            </td>
+                            <td class="day fri">
+                                <div class="num"></div>
+                            </td>
+                            <td class="day sat">
+                                <div class="num"></div>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -114,3 +186,14 @@
     </div>
 </body>
 </html>
+
+<!-- 
+    방과후 신청 정보 불러와서
+    -> 사용자 아이디와 일치하는 내용 찾고
+    -> 해당 방과후의 일정에 따라서 탬플릿에 요소(일정) 추가
+    
+    방과후 일정을 클릭하면 상세한 내용과 시간이 적힌 팝업 나오게 추가
+    -> 선생님의 방과후 관리 페이지과 연동되게 설정 (같은 데이터 공유)
+    => 학생의 방과후 일정 확인은 보여주는 페이지, 선생의 방과후 관리 페이지는 수정 페이지
+    => 방과후 개설 때에는 상세한 일정 관리 x, 일정 관리 탭에서만 관리
+-->
