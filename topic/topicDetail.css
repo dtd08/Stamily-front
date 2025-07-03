@@ -133,7 +133,7 @@
     background-color: var(--main-color);
 }
 
-#contents .subscr-box .btn-box #subscr:hover {
+#contents .subscr-box .btn-box .subscr:hover {
     background-color: #c5f061;
     cursor: pointer;
 }
