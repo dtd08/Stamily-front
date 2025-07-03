@@ -110,9 +110,6 @@
     margin-top: 5px;
     padding: 2px 5px;
 
-    background-color: #ddd;
-    /* border-radius: 7px; */
-
     /* 메세지 숨기기 */
     overflow: hidden;
     white-space: nowrap;

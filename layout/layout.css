@@ -216,7 +216,7 @@ hr {
     color: var(--main-font-color);
 }
 
-#nav .nav > ul li a:focus ~ .sub {
+#nav .nav > ul li:hover > .sub {
     display: block;
 }
 
@@ -227,7 +227,7 @@ hr {
     width: 100%;
     height: 85px;
     
-    background-color: #eee;
+    background-color: #eeea;
 }
 
 #nav ul li .sub li a {
