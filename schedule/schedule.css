@@ -1,5 +1,6 @@
 /* schedule title */
 #main {
+    position: relative;
     margin-bottom: 50px;
 }
 
@@ -103,7 +104,7 @@
     border-bottom: none;
 }
 
-#calendar .week .day span {
+#calendar .week .day .line {
     display: block;
     min-height: 23px;
     
@@ -125,3 +126,7 @@
     background-color: #f4f7cf;
 }
 
+/* 일정 라인 클릭 시 사이드 슬라이딩 */
+#schedule-detail {
+    
+}
