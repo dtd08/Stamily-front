@@ -128,5 +128,66 @@
 
 /* 일정 라인 클릭 시 사이드 슬라이딩 */
 #schedule-detail {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: -12.5%;
+
+    min-width: 395px;
+    height: calc(100% + 50px);
+    overflow: hidden;
+}
+
+#btn-box {
+    position: relative;
+    right: -350px;
+    transition: all 0.6s ease;
+}
+
+#btn-box .dummy {
+    height: calc(100% - 45px);
+}
+
+#detail-btn {
+    position: relative;
+    top: 35px;
+
+    padding: 12px 15px;
+    font-size: 15px;
+
+    background-color: #f5f5f5;
+    border: var(--main-border-set);
+    border-right: none;
+}
+
+#detail-btn:hover {
+    background-color: #f1f1f1;
+}
+
+#content-box {
+    position: relative;
+    right: -350px;
+
+    width: 350px;
+    height: 100%;
     
+    padding: 30px 20px;
+    background-color: #e7e7e7;
+    
+    box-sizing: border-box;
+    border-left: var(--main-border-set);
+
+    transition: all 0.6s ease;
+    transform-origin: right;
+}
+
+#detail-title {
+    font-size: xx-large;
+    margin-bottom: 10px;
+}
+
+#detail-content li {
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
 }

@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="../settings.css">
     <link rel="stylesheet" href="../layout/layout.css">
 
-    <script src="../layout/layout.js"></script>
+    <script src="../layout/layout.js" defer></script>
+    <script src="schedule.js" defer></script>
     
     <title>STAMILY</title>
 </head>
@@ -179,7 +180,19 @@
                 </table>
             </section>
             <aside id="schedule-detail">
-                
+                <div id="btn-box">
+                    <span id="detail-btn" class="close">▶</span>
+                    <div class="dummy"></div>
+                </div>
+                <div id="content-box">
+                    <h2 id="detail-title">방과후명</h2>
+                    <ul id="detail-content">
+                        <li><strong>강사명 </strong><span class="content">강사명</span></li>
+                        <li><strong>강의 요일 </strong><span class="content">요일</span></li>
+                        <li><strong>강의 기간 </strong><span class="content">기간</span></li>
+                        <li><strong>수업 시간 </strong><span class="content">시간</span></li>
+                    </ul>
+                </div>
             </aside>
         </main>
 
@@ -194,8 +207,9 @@
     -> 사용자 아이디와 일치하는 내용 찾고
     -> 해당 방과후의 일정에 따라서 탬플릿에 요소(일정) 추가
     
-    방과후 일정을 클릭하면 상세한 내용과 시간이 적힌 팝업 나오게 추가
+    방과후 일정을 클릭하면 상세한 내용과 시간이 적힌 사이드 슬라이드 나오게 추가
     -> 선생님의 방과후 관리 페이지과 연동되게 설정 (같은 데이터 공유)
     => 학생의 방과후 일정 확인은 보여주는 페이지, 선생의 방과후 관리 페이지는 수정 페이지
     => 방과후 개설 때에는 상세한 일정 관리 x, 일정 관리 탭에서만 관리
+    + 상세 내용에 수업 목표 추가하는거 어떤데
 -->
