@@ -1,3 +1,7 @@
+#top {
+    overflow: hidden;
+}
+
 /* schedule title */
 #main {
     position: relative;
@@ -111,10 +115,18 @@
     margin-top: 5px;
     padding: 2px 5px;
 
+    z-index: 100;
+
     /* 메세지 숨기기 */
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+
+#calendar .week .day .line:hover {
+    scale: 1.05;
+    border: var(--main-border-set);
+    cursor: pointer;
 }
 
 /* 테스트 일정 */
@@ -131,16 +143,19 @@
     display: flex;
     position: absolute;
     top: 0;
-    right: -12.5%;
+    right: -395px;
 
     min-width: 395px;
     height: calc(100% + 50px);
     overflow: hidden;
+    
+    transition: all 0.6s ease;
+    transform-origin: right;
 }
 
 #btn-box {
     position: relative;
-    right: -350px;
+    width: 45px;
     transition: all 0.6s ease;
 }
 
@@ -166,7 +181,6 @@
 
 #content-box {
     position: relative;
-    right: -350px;
 
     width: 350px;
     height: 100%;
