@@ -1,8 +1,6 @@
 #top {
     overflow: hidden;
     position: fixed; /* 이거 없으면 aside overflow: hidden이 안먹힘 */
-    position: fixed; /* 이거 없으면 aside overflow: hidden이 안먹힘 */
-} 
 
 /* schedule title */
 #main {
