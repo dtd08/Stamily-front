@@ -1,5 +1,5 @@
 /* variables */
-:root {
+:root { 
     --main-border-color: #ddd;
     --main-border-set: var(--main-border-color) solid 1px;
     --header-height: 60px;
