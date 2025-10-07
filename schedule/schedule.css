@@ -1,5 +1,6 @@
 #top {
     overflow: hidden;
+    position: fixed; /* 이거 없으면 aside overflow: hidden이 안먹힘 */
 }
 
 /* schedule title */
@@ -142,15 +143,16 @@
 #schedule-detail {
     display: flex;
     position: absolute;
-    top: 0;
-    right: -395px;
+    top: calc(var(--header-height) + var(--nav-height-plus-line));
+    right: -350px;
 
-    min-width: 395px;
+    min-width: 350px;
     height: calc(100% + 50px);
     overflow: hidden;
     
     transition: all 0.6s ease;
     transform-origin: right;
+    z-index: 1100;
 }
 
 #btn-box {
