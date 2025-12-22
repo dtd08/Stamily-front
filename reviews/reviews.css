@@ -25,16 +25,6 @@
     color: #394e08;
 }
 
-.reviews .review-info .more {
-    display: inline-block;
-
-    width: 85px;
-    height: 35px;
-
-    background-color: #efefef;
-    border: var(--main-border-set);
-    border-radius: 7px;
-}
 
 /* reviews - bundle */
 .reviews .review-bundle {
@@ -129,4 +119,5 @@
     line-height: 10px;
     /* background-color: #dedede; */
 }
+
 
