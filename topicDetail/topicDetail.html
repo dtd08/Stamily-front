@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="topicDetail.css">
+    <link rel="stylesheet" href="../settings.css">
+    <link rel="stylesheet" href="../layout/layout.css">
+
+    <script src="../layout/layout.js"></script>
+    
+    <title>STAMILY</title>
+</head>
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header id="header"></header>
+
+        <!-- main -->
+        <main id="main">
+            <div class="bc"></div>
+            <div class="container">
+                <section id="headline">
+                    <div class="headline">
+                        <h2 class="topic-title">강의명</h2>
+                        <p class="descr">강의 간단 설명</p>
+                        
+                        <div class="elements">
+                            <span id="score">평점</span>
+                            <span id="cnt-review">수강평수</span>
+                            <span id="cnt-student">수강생수</span>
+                        </div>
+
+                        <p class="name">강사명</p>
+                        
+                        <div class="categories">#
+                            <span class="category fir">카테고리</span>
+                            <span class="category sec">카테고리</span>
+                            <span class="category thr">카테고리</span>
+                        </div>
+                    </div>
+                    <div class="topic-image">
+                        <!-- 이미지 불러오기 (spring) -->
+                    </div>
+                </section>
+                <section id="contents">
+                    <div class="content">
+                        강의 상세 설명
+                        <!-- markdown 사용 (spring) -->
+                    </div>
+                    <article class="subscr-box">
+                        <!-- form 전송 대신 url에 파라미터로 넣기(controller 매핑) -->
+                        <form class="btn-box" name="regi" method="post" action="#">
+                            <input type="hidden" name="to_id">
+                            <button type="submit" class="subscr" onclick="location.href='../regi/regiTopic.html'">수강신청하기</button> <!-- 강의 신청 처리 폼 이동 -->
+                        </form>
+                        <ul class="subs">
+                            <li id="name">강사명&nbsp&nbsp<span></span></li>
+                            <li id="days">강의 요일&nbsp&nbsp<span></span></li>
+                            <li id="period">수업 시수&nbsp&nbsp<span></span></li>
+                            <li id="time">수업 시간&nbsp&nbsp<span></span></li>
+                            <li id="level">난이도&nbsp&nbsp<span></span></li>
+                            <li id="condition">조건&nbsp&nbsp<span></span></li>
+                        </ul>
+                    </article>
+                </section>
+            </div>
+        </main>
+
+        <!-- footer -->
+        <footer id="footer"></footer>
+    </div>
+</body>
+</html>
